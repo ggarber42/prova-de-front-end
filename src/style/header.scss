@@ -1,0 +1,146 @@
+header{
+    
+    .top-nav{
+        background: #d3d3d382;
+        height: 1vh;
+    }
+
+    nav{
+    
+    
+        display: flex;
+        justify-content: space-evenly;
+        background: #06799f;
+        height: 10.5vh;
+    
+        section{
+            display: flex;
+            align-items: center;
+            color: #fff;
+    
+    
+            &.logo{
+    
+                img{
+                    
+                    width: 210px;
+                    height: 210px;
+                    position: relative;
+                    top: 1em;
+                }
+    
+                font-size: 2rem;
+    
+                .nome{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+    
+                    b{
+                        font-size: 2.5rem;
+                        text-decoration: underline;
+                    }
+                }
+            }
+    
+            &.carrinho-sect{
+                
+                background: #05617f;
+                position: relative;
+                padding: 1em;
+                font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+
+                .carrinho{
+
+                    font-size: 1.25rem;
+                }
+
+                &:hover, &:active{
+                    
+                    background: #FF8973;
+
+                    .resumo-pedido{
+
+                        display: block;
+                    }
+                }
+                .resumo-pedido{
+
+                    background: #fff;
+                    color: #000;
+                    display:none;
+                    min-height: 18.5vh;
+                    min-width: 25vw;
+                    max-width: 40vw;
+                    position: absolute;
+                    top: 11vh;
+                    border: 1px solid #cfd2d5;
+                    left: -15vw;
+                    transition: all 0.5s ease;
+
+                    &::before{
+                        content: '';
+                        display: block;
+                        position: absolute;
+                        top: -2vh;
+                        left: 15vw;
+                        z-index: 1;
+                        width: 0;
+                        height: 0;
+                        border-left: 1.25em solid transparent;
+                        border-right: 1.25em solid transparent;
+                        border-bottom: 1.45em solid #fff;
+                        transition: all 0.5s ease;
+                    }
+
+                    &:hover{
+                       display: block; 
+                       transition: all 0.5s ease;
+                    }
+
+                    ul{
+                        list-style: none;
+                        padding: .5em;
+                        padding-right: 0;
+
+                        li{
+                            
+                            padding: .5em;
+                            font-size: 1.1rem;
+                            width: 90%;
+                            span{
+
+                                display: inline;
+                            }
+                            button{
+
+                                background: #fff;
+                                border: none;
+                                cursor: pointer;
+                                font-size: 1.05em ;
+                            }
+                        }
+                    }
+                    .total{
+
+                        padding: .5em 1em;
+                        font-size: 1.35rem;
+                        margin-bottom: 1.25em;
+                    }
+                }
+            }
+        }
+
+        .search-filter{
+
+            input{
+
+                font-size: 1.25rem;
+                padding: .5em .25em;
+                width: 25em;
+            }
+        }
+    }
+
+}

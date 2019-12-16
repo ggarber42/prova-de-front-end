@@ -1,0 +1,35 @@
+#middle {
+  margin: 0 1em;
+  color: #444444; }
+  #middle ul#listagem {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); }
+    #middle ul#listagem li.product {
+      font-family: Lato;
+      text-align: center; }
+      #middle ul#listagem li.product .price > * {
+        margin: 0.25em;
+        display: block; }
+      #middle ul#listagem li.product .price .list-price span {
+        color: #06799F;
+        font-size: 1.65em;
+        font-weight: bold; }
+      #middle ul#listagem li.product .price .condition .parcels, #middle ul#listagem li.product .price .condition .parcel-value {
+        font-weight: bold; }
+      #middle ul#listagem li.product .price * {
+        font-size: 1.45rem;
+        font-style: normal; }
+      #middle ul#listagem li.product * {
+        margin: 1em 0; }
+      #middle ul#listagem li.product button {
+        background: #1BB21B;
+        color: #fff;
+        border: none;
+        font-size: 1.5rem;
+        padding: .75em;
+        border-radius: 5%;
+        cursor: pointer;
+        border-bottom: .2em solid #168E16; }
+        #middle ul#listagem li.product button:hover {
+          opacity: 0.85; }

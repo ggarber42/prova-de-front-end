@@ -1,0 +1,74 @@
+@import "_config.scss";
+
+#middle{
+
+    margin: 0 1em;
+    color : $color;
+    
+    ul#listagem{
+
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+
+        li.product{
+
+            font-family: $primary-font;
+            text-align: center;
+            
+            .price{
+                
+                > * {
+                    
+                    margin: 0.25em;
+                    display: block;
+                }
+                
+                .list-price{
+                    
+                    span{
+                        
+                        color: $fontPrice-color;
+                        font-size: $fontPricefont-size;
+                        font-weight: $fontPrice-weight;
+                    }
+                }
+                
+                .condition{
+                    
+                    .parcels, .parcel-value{
+                        
+                        font-weight: $fontPrice-weight;
+                    }
+                }
+                
+                *{
+
+                    font-size: $font-size;
+                    font-style: $font-style;
+                }
+            }
+
+            *{
+                margin: 1em 0;
+            }
+
+            button{
+
+                background: $button-background;
+                color: $button-color;
+                border: none;
+                font-size: $button-fontSize;
+                padding: .75em;
+                border-radius: 5%;
+                cursor: pointer;
+                border-bottom: .2em solid #168E16;
+
+                &:hover{
+
+                    opacity: 0.85;
+                }
+            }
+        }
+    }
+}

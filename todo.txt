@@ -1,0 +1,6 @@
+*atualizar carrinho
+    ** css do resumo do pedido
+      ***formatar moeda
+      *** funcionalidade botao remover do carrinho
+      *** resume nome do produto
+*pesquisa

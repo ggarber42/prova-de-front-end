@@ -1,22 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Prova Front-End DCG</title>
+    <link rel="shortcut icon" type="image/x-icon"
+        href="http://desenv.webcontinental.com.br/nanas-table/descricao/img/banana.gif">
+    <link rel="stylesheet" href="assets/style/style.css">
+    <title>Exercício Front</title>
 </head>
+
 <body>
     <header>
-        <section class="logo"></section>
-        <section class="search-filter">
-            <img src="https://media.giphy.com/media/l1J9GgGvrtTG1Y7UA/giphy.gif" alt="pelicano" width="50px" height="50px">
-            <input type="text"/>
-        </section>
-        <section id="search-input" class="basket"></section>
+        <!-- <div class="top-nav"></div> -->
+        <nav>
+            <section class="logo">
+                <img src="https://media.giphy.com/media/l1J9GgGvrtTG1Y7UA/giphy.gif" alt="pelicano" width="50px"height="50px">
+                <div class="nome">
+                    <b>Lojarça</b>
+                    <span>compre de quem dá penas!</span>
+                </div>
+            </section>
+            <section class="search-filter">
+                <input type="text"/>
+            </section>
+            <section id="search-input" class="basket"></section>
+            <section class="carrinho-sect">
+                <div class="carrinho">
+                    <span>Meu Carrinho: </span>
+                    <strong>vazio</strong>
+                </div>
+                <div class="resumo-pedido">
+                    <ul></ul>
+                <div class="total"></div>
+                </div>
+            </section>
+        </nav>
     </header>
-    <main></main>
+    <section id="middle"></section>
     <footer></footer>
-    <script src="test.js"></script>
+    <div class="modal-overlay closed">
+        <div class="modal detalhe closed" data-id="">
+            <div class="close">
+                <button>
+                    X
+                </button>
+            </div>
+            <div class="columns">
+                <div class="column 1">
+                    <div class="media"></div>
+                </div>
+                <div class="column 2">
+                    <div class="name"></div>
+                    <div class="price"></div>
+                    <div class="quantity">
+                        <span>Quantidade</span>
+                        <input type="number" name="quantity" min="1">
+                    </div>
+                    <div class="btn-buy">
+                        <button>Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+            </div>
+            <div class="description">
+                <h3>Detalhes:</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui accusamus placeat maxime fugiat ipsam
+                    unde officiis nam iure sed porro?
+                </p>
+            </div>
+            <div class="raw" style="display: none"></div>
+        </div>
+        <div class="modal confirmacao closed">
+            <h3>Produto Adicionado</h3>
+            <div class="btn">
+                <button>Continue Comprando</button>
+            </div>
+        </div>
+    </div>
+    <script src="assets/scripts/app.js"></script>
+    <script src="assets/scripts/functions.js"></script>
 </body>
+
 </html>

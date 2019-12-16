@@ -1,13 +1,9 @@
-let modulosArray = require('./modulos').default;
-
 let data = [];
 fetch('products.JSON') // JSON -> http://www.base.corecommerce.com.br/pesquisa.json?t=
 .then(res => res.json()).then(jsonData => {
+  console.log(jsonData);
   data = jsonData;
 });
-
-setTimeout(() => {
-
-  data.addMedia(data)
-        .montaGrid(data);
-}, 100);
+data.map(e => {
+  e.MediaSmall = "http://d1fgtaqzlcbo2m.cloudfront.net/".concat(e.MediaSmall);
+});
